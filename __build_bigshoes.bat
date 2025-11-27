@@ -1,1 +1,2 @@
 python -m nuitka --onefile --include-data-files=encdata.csv=encdata.csv --include-data-files=formation.txt=formation.txt --include-data-files=formation_dump=formation_dump --include-data-files=initial_setup_data_dump=initial_setup_data_dump --include-data-files=preemptive.txt=preemptive.txt ./main_window_linux.py
+mv main_window_linux.bin big_shoes.bin
