@@ -4,9 +4,11 @@ Big Shoes is a standalone Final Fantasy 7 stepgraph viewer written in Python.
 
 ## Installation and Usage
 
-You can now run this as a standalone application. Download the latest release, and run big_shoes.exe. Note that big_shoes.exe must be in this folder to work properly (it has to find some files), but you can make a shortcut to it.
+This should now run on Linux (tested with Arch Linux and BizHawk). You may have to add your own key to the EMULATOR_MAP in hook_linux.py. For example, for me BizHawk was running inside mono, so I edited the line ""[Ee]mu[Hh]awk"" to simply say "mono".
 
-To build as a standalone application, you will need `Nuitka`. Run the installer script `__build_bigshoes.bat` to build it `big_shoes.exe`.
+To use this, you need to run the script as sudo, or else you won't get access to other windows. You can also theoretically compile this into a standalone big_shoes.bin, but starting this also requires you to run it as sudo.
+
+To build as a standalone application, you will need `Nuitka`. Run the installer script `__build_bigshoes.bat` to build it `big_shoes.bin`.
 
 ### Connecting to FF7
 
@@ -41,10 +43,4 @@ This window lists the possible formations on this field.
 
 ## Compatability
 
-Big Shoes is compatible with:
-
-- FF7 PC Steam Version
-- DuckStation (requires manual address search)
-- BizHawk 2.3.2 to 2.7 and 2.9.1
-- Retroarch
-- PSXFin v1.13
+I only tested this version of Big Shoes with BizHawk 2.11
